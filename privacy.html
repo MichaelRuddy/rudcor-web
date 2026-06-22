@@ -25,31 +25,60 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <div class="date">Last updated: May 26, 2026</div>
+    <div class="date">Last updated: June 18, 2026</div>
 
-    <p>BestBook ("we", "our", "us"), operated by <strong>MudCor LLC</strong>, publishes the BestBook mobile software application. This policy details our protocols regarding information collection, operational transparency, and data privacy.</p>
+    <p>BestBook ("we", "our", "us"), operated by <strong>MudCor LLC</strong>, publishes the BestBook mobile software application (the "Application"). This policy details our protocols regarding information collection, operational transparency, and data privacy.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>BestBook values user privacy and operates on a zero-friction data model. The application does not require account creation, user logins, or profiling metrics. Consequently, we do not collect personal identifiers such as your name, street address, personal phone number, or payment card details. Any local parlay building or tracking configurations you select inside the application remain securely localized to your specific physical device hardware. The Application utilizes localized, non-volatile device storage frameworks (including AsyncStorage and local device caching protocols) to manage user state configurations, remember interface preferences, and format onboarding navigation sequences. This tracking state is entirely isolated within your device's sandbox memory; no tracking identifiers, state flags, or behavioral profiles are uploaded to external cloud environments or synchronized across networks by MudCor LLC.</p>
-    <p>To optimize performance configurations across devices, we may aggregate completely anonymous technical usage telemetry data. This includes metrics such as application crash logs, hardware device models, and active operating system platform versions. <strong>We reserve the right to update this policy as we roll out new feature sets, including user-authenticated accounts and cloud-based performance analytics.</strong></p>
+    <h2>1. Account Information</h2>
+    <p>BestBook offers optional user account creation via email/password registration, Google Sign-In, or Apple Sign-In. When you create an account, we collect and store the following information in our secure cloud database (Google Firebase/Firestore):</p>
+    <ul>
+        <li><strong>Email address</strong> — used for account authentication and verification.</li>
+        <li><strong>Display name</strong> — if provided during registration or sourced from your Google/Apple account.</li>
+        <li><strong>Account creation date</strong> — timestamp of when your account was created.</li>
+        <li><strong>Last active date</strong> — timestamp of your most recent sign-in, used to maintain session integrity.</li>
+        <li><strong>Referral code</strong> — if you entered a referral code during sign-up, we store which code was used to attribute your registration.</li>
+    </ul>
+    <p>We do not collect your street address, personal phone number, payment card details, or social security number. We do not store your password directly; authentication is managed securely by Google Firebase Authentication.</p>
 
-    <h2>2. Location Data (On-Device Processing Only)</h2>
-    <p>BestBook utilizes native device location services (via core device GPS frameworks) solely to provide real-time, localized compliance formatting, region-gating parameters, and state-mandated responsible gaming helplines. This location assessment is executed entirely in ephemeral, temporary memory on your local physical device hardware to determine your active jurisdiction. MudCor LLC does not harvest, transmit, share, log, or store geographic coordinates or physical location histories on any external servers or backend databases. While the Application triggers core hardware geolocation sensors to parse regional helpline configurations, this data processing window is completely ephemeral. No physical telemetry payloads or persistent coordinate histories leave your native hardware runtime context.</p>
+    <h2>2. Usage and Interaction Data</h2>
+    <p>When you interact with sportsbook links within the Application, we log the following to improve our services and support affiliate reporting:</p>
+    <ul>
+        <li><strong>Sportsbook link clicks</strong> — which sportsbook was tapped, the type of action (e.g., "bet now" or "claim offer"), and a timestamp.</li>
+        <li><strong>Aggregate click count</strong> — a running total of your sportsbook link interactions, stored on your user profile.</li>
+        <li><strong>Event and market context</strong> — the game or market associated with a link click, if applicable.</li>
+    </ul>
+    <p>This data is used exclusively for internal analytics and affiliate commission reconciliation. It is not sold or shared with third-party marketing brokers.</p>
+    <p>The Application also utilizes localized, non-volatile device storage frameworks (including AsyncStorage and local device caching) to manage interface preferences and navigation state. This data remains entirely on your device and is not uploaded to our servers.</p>
 
-    <h2>3. Third-Party Services & Affiliate Tracking</h2>
-    <p>BestBook aggregates and displays publicly broadcasted sports wagering market data, including live odds, multi-leg parlay configurations, and best-value bet tracking vectors from licensed third-party sportsbook platforms. We do not process financial transactions, facilitate gaming operations, or accept wagers. All commercial interactions or conversions occur externally on the respective third-party licensed platforms.</p>
-    <p>We partner with performance marketing networks to route traffic via outbound deep links. When you interact with these links, <strong>your device may transmit technical information—such as IP address, device identifiers, and click-string tokens—to these third-party partners.</strong> This data is used solely for the purpose of attributing traffic and auditing conversion funnels to ensure accurate commission reporting. We do not share your name, contact information, or other personal identifiers with these entities.</p>
-    
-    <h2>4. Data Distribution</h2>
-    <p>We do not lease, trade, distribute, or sell user tracking configurations or technical data payloads to any third-party marketing brokers or outside entities.</p>
+    <h2>3. Location Data (On-Device Processing Only)</h2>
+    <p>BestBook utilizes native device location services (via core device GPS frameworks) solely to provide real-time, localized compliance formatting, region-gating parameters, and state-mandated responsible gaming helplines. This location assessment is executed entirely in ephemeral, temporary memory on your local physical device hardware to determine your active jurisdiction. MudCor LLC does not harvest, transmit, share, log, or store geographic coordinates or physical location histories on any external servers or backend databases.</p>
 
-    <h2>5. Regulatory Age Requirements</h2>
-    <p>Consistent with domestic compliance regulations governing sports betting markets, BestBook is strictly prohibited for use by individuals under the age of 21. We do not target, track, or knowingly retain information from minors.</p>
+    <h2>4. Third-Party Services & Affiliate Tracking</h2>
+    <p>BestBook aggregates and displays publicly available sports wagering market data, including live odds and player prop comparisons from licensed third-party sportsbook platforms. We do not process financial transactions, facilitate gaming operations, or accept wagers. All commercial interactions or conversions occur externally on the respective third-party licensed platforms.</p>
+    <p>We partner with performance marketing networks to route traffic via outbound deep links. When you interact with these links, <strong>your device may transmit technical information — such as IP address, device identifiers, and click-string tokens — to these third-party partners.</strong> This data is used solely for the purpose of attributing traffic and auditing conversion funnels to ensure accurate commission reporting.</p>
+    <p><strong>Third-party services used by the Application:</strong></p>
+    <ul>
+        <li><strong>Google Firebase</strong> — authentication, cloud database (Firestore), and analytics.</li>
+        <li><strong>Apple Sign-In</strong> — optional authentication provider.</li>
+        <li><strong>Google Sign-In</strong> — optional authentication provider.</li>
+    </ul>
 
-    <h2>6. Operational Changes</h2>
-    <p>We reserve the right to revise this tracking framework to meet shifting mobile compliance standards. Any structural updates will be broadcasted transparently via the updated tracking version timestamp at the apex of this document.</p>
+    <h2>5. Data Retention and Deletion</h2>
+    <p>Your account data is retained for as long as your account remains active. You may delete your account at any time directly from the Application's Settings screen. Upon deletion, your user profile, click history, and any referral attribution data are permanently removed from our systems immediately. You may also contact <a href="mailto:mike@bestbook.io" style="color: #38BDF8; text-decoration: none;">mike@bestbook.io</a> for any data-related requests.</p>
 
-    <h2>7. Corporate Contact Information</h2>
-    <p>For official documentation audits or security infrastructure inquiries, please direct corporate correspondence to our administration queue at <a href="mailto:mike@bestbook.io" style="color: #38BDF8; text-decoration: none;">mike@bestbook.io</a>.</p>
+    <h2>6. Data Distribution</h2>
+    <p>We do not lease, trade, distribute, or sell your personal information or usage data to any third-party marketing brokers or outside entities. Data is shared only with the third-party service providers listed in Section 4, strictly for the purposes described in this policy.</p>
+
+    <h2>7. Regulatory Age Requirements</h2>
+    <p>Consistent with domestic compliance regulations governing sports betting markets, BestBook is strictly prohibited for use by individuals under the age of 21. We do not target, track, or knowingly retain information from minors. If we discover that an account belongs to an individual under 21, we will promptly delete the account and all associated data.</p>
+
+    <h2>8. Data Security</h2>
+    <p>We implement industry-standard security measures to protect your information, including encrypted data transmission (TLS/SSL), secure authentication protocols managed by Google Firebase, and restricted access controls on our cloud infrastructure. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+    <h2>9. Operational Changes</h2>
+    <p>We reserve the right to revise this privacy policy to reflect changes in our data practices or applicable regulations. Any updates will be reflected via the updated timestamp at the top of this document. Continued use of the Application after changes are posted constitutes your acceptance of the revised policy.</p>
+
+    <h2>10. Corporate Contact Information</h2>
+    <p>For privacy inquiries, data access requests, or account deletion requests, please contact us at <a href="mailto:mike@bestbook.io" style="color: #38BDF8; text-decoration: none;">mike@bestbook.io</a>.</p>
 </body>
 </html>
