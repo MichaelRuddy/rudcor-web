@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to BestBook...</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #0F172A; 
+            color: #94A3B8; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            text-align: center;
+        }
+        .loader { margin-bottom: 20px; color: #38BDF8; }
+    </style>
+    <script>
+        (function() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            var ios = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+            var android = /android/i.test(ua);
+
+            if (ios) {
+                window.location.href = "https://apps.apple.com/us/app/bestbook-sports/id6762332084";
+            } else if (android) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.bestbook.app&utm_source=tiktok";
+            } else {
+                window.location.href = "https://bestbook.io";
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="loader">BestBook is loading...</div>
+    <p>Redirecting you to the app store.</p>
+</body>
+</html>
