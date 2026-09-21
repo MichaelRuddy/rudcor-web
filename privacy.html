@@ -25,7 +25,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <div class="date">Last updated: June 18, 2026</div>
+    <div class="date">Last updated: September 21, 2026</div>
 
     <p>BestBook ("we", "our", "us"), operated by <strong>MudCor LLC</strong>, publishes the BestBook mobile software application (the "Application"). This policy details our protocols regarding information collection, operational transparency, and data privacy.</p>
 
@@ -37,8 +37,13 @@
         <li><strong>Account creation date</strong> — timestamp of when your account was created.</li>
         <li><strong>Last active date</strong> — timestamp of your most recent sign-in, used to maintain session integrity.</li>
         <li><strong>Referral code</strong> — if you entered a referral code during sign-up, we store which code was used to attribute your registration.</li>
+        <li><strong>Subscription / entitlement status</strong> — whether your account has an active BestBook Elite (or equivalent) entitlement, used to unlock paid features in the Application.</li>
     </ul>
     <p>We do not collect your street address, personal phone number, payment card details, or social security number. We do not store your password directly; authentication is managed securely by Google Firebase Authentication.</p>
+
+    <h2>1A. Purchases and Subscriptions</h2>
+    <p>BestBook may offer an optional auto-renewable in-app subscription (<strong>BestBook Elite</strong>, billed monthly). Payment processing for App Store and Google Play purchases is handled entirely by Apple or Google. We do not receive or store your full payment card number, CVV, or bank account details.</p>
+    <p>We use <strong>RevenueCat</strong> (and Apple/Google purchase receipts) to verify purchase status, restore purchases, and keep your entitlement in sync across devices. RevenueCat may process purchase tokens, anonymous or account-linked customer identifiers, product identifiers (e.g., <code>pro_monthly</code>), subscription period, and renewal/cancellation status as needed to provide that service. See RevenueCat's privacy policy for their practices.</p>
 
     <h2>2. Usage and Interaction Data</h2>
     <p>When you interact with sportsbook links within the Application, we log the following to improve our services and support affiliate reporting:</p>
@@ -61,6 +66,8 @@
         <li><strong>Google Firebase</strong> — authentication, cloud database (Firestore), and analytics.</li>
         <li><strong>Apple Sign-In</strong> — optional authentication provider.</li>
         <li><strong>Google Sign-In</strong> — optional authentication provider.</li>
+        <li><strong>Apple App Store / Google Play</strong> — in-app purchase and subscription billing.</li>
+        <li><strong>RevenueCat</strong> — subscription entitlement verification and restore purchases.</li>
     </ul>
 
     <h2>5. Data Retention and Deletion</h2>
